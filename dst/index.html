@@ -1,42 +1,50 @@
 <!DOCTYPE html>
-<head>
-  <meta content='width=device-width, initial-scale=1.0' name='viewport'>
-  <meta charset='UTF-8'>
-  <title>freshman's site #klis14</title>
-  <link href='stylesheets/bootstrap.css' rel='stylesheet' type='text/css'>
-  <link href='stylesheets/style.css' rel='stylesheet' type='text/css'>
-  <script src='javascripts/jquery-2.0.3.js'></script>
-  <script src='javascripts/bootstrap.js'></script>
-  <script src='javascripts/app.js'></script>
-</head>
-<body>
-  <div class='container'>
-    <div class='navbar navbar-default' role=='navigation'>
-      <div class='navbar-header'>
-        <button class='navbar-toggle' data-target='.navbar-collapse' data-toggle='collapse' type='button'>
-          <span class='sr-only'>Toggle</span>
-          <span class='icon-bar'></span>
-          <span class='icon-bar'></span>
-          <span class='icon-bar'></span>
-        </button>
-        <a class='navbar-brand' href='#'>春日地区新入生歓迎委員会Web</a>
+<html>
+  <head>
+    <meta content='width=device-width, initial-scale=1.0' name='viewport'>
+    <meta charset='UTF-8'>
+    <title>freshman's site #klis14</title>
+    <link href='stylesheets/bootstrap.css' rel='stylesheet' type='text/css'>
+    <link href='stylesheets/style.css' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+    <div class='container'>
+      <!-- = Haml::Engine.new(File.read("global_header.haml")).render -->
+      <div class='navbar navbar-default' role=='navigation'>
+        <div class='navbar-header'>
+          <button class='navbar-toggle' data-target='.navbar-collapse' data-toggle='collapse' type='button'>
+            <span class='sr-only'>Toggle</span>
+            <span class='icon-bar'></span>
+            <span class='icon-bar'></span>
+            <span class='icon-bar'></span>
+          </button>
+          <a class='navbar-brand' href='#'>春日地区新入生歓迎Web</a>
+        </div>
+        <div class='navbar-collapse collapse'>
+          <ul class='nav navbar-nav navbar-right'>
+            <li>
+              <a href='#'>日程</a>
+            </li>
+            <li>
+              <a href='#'>イベント</a>
+            </li>
+            <li>
+              <a href='#'>資料</a>
+            </li>
+            <li>
+              <a href='#'>リンク</a>
+            </li>
+          </ul>
+        </div>
       </div>
-      <div class='navbar-collapse collapse'>
-        <ul class='nav navbar-nav navbar-right'>
-          <li>
-            <a href='#'>日程</a>
-          </li>
-          <li>
-            <a href='#'>イベント</a>
-          </li>
-          <li>
-            <a href='#'>資料</a>
-          </li>
-          <li>
-            <a href='#'>リンク</a>
-          </li>
-        </ul>
+      <hr class='featurette-divider'>
+      <div id='footer'>
+        <p>春日地区新入生歓迎委員会</p>
+        <p>copyright &copy 春日地区クラス代表者会議 All rights reserved.</p>
       </div>
     </div>
-  </div>
-</body>
+    <script src='javascripts/jquery-2.0.3.js'></script>
+    <script src='javascripts/bootstrap.js'></script>
+    <script src='javascripts/app.js'></script>
+  </body>
+</html>

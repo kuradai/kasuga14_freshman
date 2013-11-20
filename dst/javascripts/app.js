@@ -1,4 +1,4 @@
 (function() {
-  console.log("ok");
+  console.log(new Date);
 
 }).call(this);
