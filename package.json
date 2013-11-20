@@ -7,6 +7,9 @@
     "grunt-contrib-clean": "~0.5.0",
     "grunt-contrib-haml": "*",
     "grunt-contrib-sass": "*",
-    "grunt-contrib-watch": "*"
+    "grunt-contrib-watch": "*",
+    "grunt-contrib-less": "~0.8.2",
+    "grunt-contrib-cssmin": "~0.7.0",
+    "grunt-contrib-uglify": "~0.2.7"
   }
 }
