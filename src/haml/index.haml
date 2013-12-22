@@ -1,2 +1,41 @@
-%h1
-  hello
+!!!
+%html
+
+  %head
+    %meta{:name => "viewport", :content => "width=device-width, initial-scale=1.0"}
+    %meta{:charset => "UTF-8"}
+    %title freshman's site #klis14
+    %link{:rel => :stylesheet, :type => :"text/css", :href => "stylesheets/bootstrap.css"}
+    %link{:rel => :stylesheet, :type => :"text/css", :href => "stylesheets/style.css"}
+    
+  %body
+    .container
+      / = Haml::Engine.new(File.read("global_header.haml")).render
+      .navbar.navbar-default{:role= => "navigation"}
+        .navbar-header
+          %button{:type => "button", :class => "navbar-toggle", "data-toggle" => "collapse", "data-target" => ".navbar-collapse"}
+            %span.sr-only Toggle
+            - 3.times do |i|
+              %span.icon-bar
+          %a{:class => "navbar-brand", :href => "#"} 春日地区新入生歓迎Web
+
+        .navbar-collapse.collapse
+          %ul.nav.navbar-nav.navbar-right
+            %li
+              %a{:href => "#"} 日程
+            %li
+              %a{:href => "#"} イベント
+            %li
+              %a{:href => "#"} 資料
+            %li
+              %a{:href => "#"} リンク
+
+      %hr.featurette-divider
+      #footer
+        %p 春日地区新入生歓迎委員会
+        %p copyright &copy 春日地区クラス代表者会議 All rights reserved.
+
+    %script{:src => "javascripts/jquery-2.0.3.js"}
+    %script{:src => "javascripts/bootstrap.js"}
+    %script{:src => "javascripts/app.js"}
+
