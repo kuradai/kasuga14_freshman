@@ -36,7 +36,12 @@ module.exports = function(grunt) {
     haml: {
       compile: {
         files: {
-          "dst/index.html": ["src/haml/index.haml"]
+          "dst/index.html": ["src/haml/index.haml"],
+          "dst/schedule.html": ["src/haml/schedule.haml"],
+          "dst/event.html": ["src/haml/event.haml"],
+          "dst/information.html": ["src/haml/information.haml"],
+          "dst/link.html": ["src/haml/link.haml"],
+          "dst/contact.html": ["src/haml/contact.haml"]
         }
       }
     },
