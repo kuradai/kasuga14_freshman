@@ -1,46 +1,46 @@
 %h1
   日程
 
-%table.table.table-bordered
+%table.table.table-bordered.table-calender
   %thead
     %tr
-      - ["日", "月", "火", "水", "木" ,"金", "土"].each do |item|
+      - ["月", "火", "水", "木" ,"金", "土", "日"].each do |item|
         %th #{item}
 
   %tbody
     %tr
       %td
-        1
+        %span 1
         %span.label.label-default 予定
         %p
           hoge
       %td
-        2
+        %span 2
         %span.label.label-primary 予定
         %p
           hoge
       %td
-        3
+        %span 3
         %span.label.label-success 予定
         %p
           hoge
       %td
-        4
+        %span 4
         %span.label.label-info 予定
         %p
           hoge
       %td
-        5
+        %span 5
         %span.label.label-warning 予定
         %p
           hoge
       %td
-        6
+        %span 6
         %span.label.label-danger 予定
         %p
           hoge
       %td
-        7
+        %span 7
         %span.label.label-primary 予定
         %p
           hoge
