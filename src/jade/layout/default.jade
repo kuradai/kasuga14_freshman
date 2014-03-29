@@ -1,0 +1,28 @@
+doctype
+html
+  head
+    title 春日地区新入生歓迎委員会Web
+    meta(charset= 'UTF-8')
+    meta(content= 'width=device-width, initial-scale=1.0', name= 'viewport')
+    meta(content= '', property= 'keywords')
+    meta(content= '', property= 'og:title')
+    meta(content= '', property= 'og:type')
+    meta(content= '', property= 'og:description')
+    meta(content= '', property= 'og:url')
+    meta(content= '', property= 'og:site_name')
+    meta(content= '', property= 'og:email')
+    link(href='', rel= 'shortcut icon')
+    link(href='', rel= 'apple-touch-icon')
+    script(src= "lib/jquery/js/jquery.min.js")
+    script(src= "lib/bootstrap/js/bootstrap.min.js")
+    script(src= "js/app.js")
+    link(rel= "stylesheet", type= "text/css", href= "lib/bootstrap/css/bootstrap.min.css")
+    link(rel= "stylesheet", type= "text/css", href= "css/style.css")
+
+  body
+    include ../template/header
+
+    .container
+      block contents
+
+    include ../template/footer

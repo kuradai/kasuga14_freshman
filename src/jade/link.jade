@@ -1,0 +1,17 @@
+extends layout/default
+
+block contents
+  h1 リンク
+  ul
+    for val, key in {"筑波大学":"http://www.tsukuba.ac.jp/", "筑波大学 情報学群":"http://inf.tsukuba.ac.jp/", "筑波大学 情報学群 情報科学類":"http://www.coins.tsukuba.ac.jp/", "筑波大学 情報学群 知識情報・図書館学類":"http://klis.tsukuba.ac.jp/", "筑波大学 情報学群 メディア創成学類":"http://www.mast.tsukuba.ac.jp/"}
+      li
+        a(href= "#{val}", target= "_brank") #{key}
+
+  h1 資料
+
+  h2 かすがらいふ
+  p.
+    春と夏の年2回、「かすがらいふ」という情報誌が発行されています。
+    春号では主に新入生向けの情報が盛り沢山な内容になっているので、是非目を通しておくことをオススメします。
+
+  a.btn.btn-default Download

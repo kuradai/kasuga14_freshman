@@ -1,3 +1,6 @@
 node_modules
 sass-cache
 *.sassc
+bower_components
+dst
+.DS_store

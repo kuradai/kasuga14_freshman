@@ -1,0 +1,14 @@
+.navbar.navbar-default(role= "navigation")
+  .container
+    .navbar-header
+      button(type= "button", class= "navbar-toggle", "data-toggle"= "collapse", "data-target"= ".navbar-collapse")
+        span.sr-only Toggle
+        each i in [,,,]
+          span.icon-bar
+      a.navbar-brand(href= "index.html") 春日地区新入生歓迎委員会
+
+    .navbar-collapse.collapse
+      ul.nav.navbar-nav.navbar-right
+        each val, key in {index: "トップ", schedule: "日程", event: "イベント", link: "リンク", contact: "お問い合わせ"}
+          li
+            a(href= "#{key}.html") #{val}
