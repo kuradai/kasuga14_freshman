@@ -1,16 +1,16 @@
 doctype
 html
   head
-    title 春日地区新入生歓迎委員会Web
+    block title
+      title 春日地区新入生歓迎委員会Web
     meta(charset= 'UTF-8')
     meta(content= 'width=device-width, initial-scale=1.0', name= 'viewport')
-    meta(content= '', property= 'keywords')
-    meta(content= '', property= 'og:title')
-    meta(content= '', property= 'og:type')
+    meta(content= '筑波大学, 情報学群, 知識情報・図書館学類, 情報メディア創成学類, klis, mast, 新入生歓迎会, 新歓, 春日地区, 春日エリア, 春日, 春日地区クラス代表者会議, クラ代', property= 'keywords')
+    meta(content= '春日地区新入生歓迎委員会Web', property= 'og:title')
+    meta(content= 'website', property= 'og:type')
     meta(content= '', property= 'og:description')
     meta(content= '', property= 'og:url')
-    meta(content= '', property= 'og:site_name')
-    meta(content= '', property= 'og:email')
+    meta(content= '春日地区新入生歓迎委員会Web', property= 'og:site_name')
     link(href='', rel= 'shortcut icon')
     link(href='', rel= 'apple-touch-icon')
     script(src= "lib/jquery/js/jquery.min.js")
@@ -18,11 +18,11 @@ html
     script(src= "js/app.js")
     link(rel= "stylesheet", type= "text/css", href= "lib/bootstrap/css/bootstrap.min.css")
     link(rel= "stylesheet", type= "text/css", href= "css/style.css")
+    block assets
 
   body
     include ../template/header
-
-    .container
-      block contents
+    
+    block contents
 
     include ../template/footer

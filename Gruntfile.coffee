@@ -29,7 +29,6 @@ module.exports = (grunt) ->
           cleanBowerDir: false
 
     watch:
-
       jade:
         files: '**/*.jade'
         tasks: ['jade']
@@ -57,10 +56,7 @@ module.exports = (grunt) ->
         options:
           join: true
         files:
-          "dst/js/app.js": [
-            "src/coffee/_intro.coffee"
-            "src/coffee/*.coffee"
-          ]
+          "dst/js/app.js": ["src/coffee/*.coffee"]
 
     sass:
       compile:
@@ -77,6 +73,12 @@ module.exports = (grunt) ->
             expand: true
             src: ["src/image/*.*"]
             dest: "dst/img"
+            flatten: true
+          },
+          {
+            expand: true
+            src: ["src/pdf/*.*"]
+            dest: "dst/pdf"
             flatten: true
           }
         ]

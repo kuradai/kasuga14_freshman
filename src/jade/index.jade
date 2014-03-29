@@ -1,9 +1,28 @@
 extends layout/default
 
 block contents
-  h1.
-    筑波大学 春日地区へようこそ！
-  p.
-    新入生の皆さん、筑波大学へのご入学おめでとうございます。
-    春日地区は情報メディア創成学類・知識情報・図書館学類が主に学ぶエリアです。
-    春日地区新入生歓迎委員会では、新入生の皆さんを迎えるべく様々なイベントを企画しています。
+  .row.welcome
+    .container
+      h1
+        |筑波大学
+        br
+        |春日地区へようこそ！
+      p.
+        新入生の皆さん、筑波大学へのご入学おめでとうございます。
+        春日地区は情報メディア創成学類・知識情報・図書館学類が主に学ぶエリアです。
+        春日地区新入生歓迎委員会では、新入生の皆さんを迎えるべく様々なイベントを企画しています。
+
+  .container.welcome_content
+    .col-sm-8
+      h3 お知らせ
+      ul
+        li
+          span.label.label-default 2014/03/29
+          |webサイトを公開しました
+
+      h3 紹介文
+
+    .col-sm-4
+      a.twitter-timeline(href="https://twitter.com/kasugashinkan", data-widget-id="449802367513280512") @kasugashinkan からのツイート
+      script
+        !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");

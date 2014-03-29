@@ -1,13 +1,19 @@
 extends layout/default
+block title
+  title contents|春日地区新入生歓迎委員会Web
 
 block contents
-  h1
-    contact
+  .container
+    h1 お問い合わせ
+    p.
+      春日地区新入生歓迎会に関するお問い合せは, Twitter(@kasugashinkan)で受け付けています。 Reply又はDirect messageをお送りください。
 
-  ul.pager
-    li
-      a hoge
-    li
-      a hoge
-    li
-      a hoge
+    a.twitter-follow-button(href="https://twitter.com/kasugashinkan", data-show-count="false", data-lang="en") Follow @kasugashinkan
+    script
+      !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+    h3 このwebサイトについて
+    p
+      |このWEBサイトは、春日地区新入生歓迎委員会からの情報提供を目的としています。
+      |本サイトの内容は、予告無く変更する場合がありますので、ご利用の際はその都度内容をご確認下さい。
+      |ソースコードは
+      a(href="https://github.com/makky3939/klis14_freshman") こちら

@@ -1,5 +1,5 @@
 node_modules
-sass-cache
+.sass-cache
 *.sassc
 bower_components
 dst
