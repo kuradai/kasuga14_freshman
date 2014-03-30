@@ -1,0 +1,15 @@
+=keyframes($name)
+  @-webkit-keyframes #{$name}
+    @content
+  @-moz-keyframes #{$name}
+    @content
+  @-ms-keyframes #{$name}
+    @content
+  @keyframes #{$name}
+    @content
+
+@mixin animation($val)
+  -webkit-animation: $val
+  -ms-animation: $val
+  -moz-animation: $val
+  animation: $val

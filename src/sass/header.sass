@@ -1,0 +1,30 @@
+// Header
+.navbar-klis
+  margin-bottom: 0
+  background: $white
+  opacity: 0.85
+  z-index: 5
+  @include border-radius(0)
+  border: 0
+  border-top: 4px solid $green
+.navbar-brand
+  margin-left: 5px
+  padding: 10px 15px
+  border: 0
+  height: 60px
+  &:hover
+    color: $green
+.navbar-nav > li >  a
+  padding: 7px
+  margin: 11px
+  border: 2px solid transparent
+  @include border-radius(3px)
+  transition: all .1s ease-in
+  &:hover
+    border-color: $smokeGray
+    background: $white
+.navbar-toggle
+  background: $lightGray
+  border: 2px solid $white
+  .icon-bar
+    background: $green

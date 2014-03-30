@@ -1,0 +1,42 @@
+// Content
+$top_img_width: image-width("top_pano.jpg")
+$top_img_height: image-height("top_pano.jpg")
+
++keyframes(topsliderAnimation)
+  0%
+    @include transform(translate3d(0, 0, 0))
+  100%
+    @include transform(translate3d(-$top_img_width, 0, 0))
+
+.welcome
+  position: relative
+  margin: -60px 0 0 0
+  height: 400px
+  width: 100%
+  z-index: 3
+  overflow: hidden  
+  .top_pano
+    position: absolute
+    content: " "
+    width: $top_img_width*1.7
+    height: 400px
+    background-image: url("../img/top_pano.jpg")
+    background-repeat: repeat-x
+    background-size: $top_img_width/2 $top_img_height/2
+    @include animation(topsliderAnimation 1024s infinite linear)
+  .container
+    margin-top: 160px
+    padding: 0
+    h1,
+    p
+      padding: 5px
+      background: $smokeGray
+      opacity: 0.85
+      max-width: 555px
+
+.welcome_content
+  padding: 20px 0 0 0
+  span
+    margin-right: 5px
+  ul
+    list-style: none
