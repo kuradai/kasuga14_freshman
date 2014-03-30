@@ -2,6 +2,7 @@ extends layout/default
 
 block contents
   .row.welcome
+    .top_pano
     .container
       h1
         |筑波大学
@@ -14,15 +15,22 @@ block contents
 
   .container.welcome_content
     .col-sm-8
-      h3 お知らせ
-      ul
-        li
-          span.label.label-default 2014/03/29
-          |webサイトを公開しました
+      .col-xs-12.panel.panel-default
+        h3 春日地区新入生歓迎委員会について
+        p.
+          春日地区の新歓委員は皆同じパーカーを着て活動しています。
+          これを着ていない人たちは春日新歓とは関係ないので、話しかけられた場合は気をつけるようにしてください。
 
-      h3 紹介文
+      .col-xs-12.panel.panel-default
+        h3 お知らせ
+        ul
+          li
+            span.label.label-default 2014/03/30
+            |資料を追加しました
+          li
+            span.label.label-default 2014/03/29
+            |webサイトを公開しました
 
     .col-sm-4
       a.twitter-timeline(href="https://twitter.com/kasugashinkan", data-widget-id="449802367513280512") @kasugashinkan からのツイート
-      script
-        !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+      script !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");

@@ -89,7 +89,8 @@ module.exports = (grunt) ->
     concat:
       sass:
         src: [
-          'src/sass/_intro.sass'
+          'src/sass/init.sass'
+          'src/sass/mixin.sass'
           'src/sass/*.sass'
         ],
         dest: 'src/sass/tmp/style.sass'

@@ -1,5 +1,10 @@
 hr.featurette-divider
 #footer
   .container
-    p by 春日地区新入生歓迎委員会
-    p copyright &copy 筑波大学 春日地区クラス代表者会議 All rights reserved.
+    ul.list-inline
+        li &copy 2014 筑波大学 春日地区クラス代表者会議
+        each val, key in {index: "トップ", schedule: "日程", event: "イベント", link: "リンク", contact: "お問い合わせ"}
+          li
+            a(href= "#{key}.html") #{val}
+        li.pull-right
+          a.twitter-icon(href= "https://twitter.com/kasugashinkan", target= "_brank")
