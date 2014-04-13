@@ -6,7 +6,7 @@ block contents
   .container
     h1 リンク
     ul
-      for val, key in {"筑波大学":"http://www.tsukuba.ac.jp/", "筑波大学 情報学群":"http://inf.tsukuba.ac.jp/", "筑波大学 情報学群 情報科学類":"http://www.coins.tsukuba.ac.jp/", "筑波大学 情報学群 知識情報・図書館学類":"http://klis.tsukuba.ac.jp/", "筑波大学 情報学群 メディア創成学類":"http://www.mast.tsukuba.ac.jp/"}
+      for val, key in {"筑波大学":"http://www.tsukuba.ac.jp/", "筑波大学 情報学群":"http://inf.tsukuba.ac.jp/", "筑波大学 情報学群 情報科学類":"http://www.coins.tsukuba.ac.jp/", "筑波大学 情報学群 知識情報・図書館学類":"http://klis.tsukuba.ac.jp/", "筑波大学 情報学群 情報メディア創成学類":"http://www.mast.tsukuba.ac.jp/"}
         li
           a(href= "#{val}", target= "_brank") #{key}
 
@@ -39,6 +39,7 @@ block contents
     h2 スライド
     .col-sm-6
       .panel.panel-default.panel-slide
+        p 情報メディア創成学類(MAST)を対象とした、履修に関する内容です。
         iframe(src="http://www.slideshare.net/slideshow/embed_code/33405528", width="427", height="356", frameborder="0", marginwidth="0", marginheight="0", scrolling="no", style="border:1px solid #CCC; border-width:1px 1px 0; margin-bottom:5px; max-width: 100%; ")
         .text-center
           a.btn.btn-default(href= "pdf/course_guidance_14.pdf", target= "_brank") Download
